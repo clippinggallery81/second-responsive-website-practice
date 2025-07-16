@@ -120,7 +120,7 @@ main section{
 /* enjoy feature style */
 
 .enjoy-feature-container{
-    max-width: 590px;
+    max-width: 600px;
 }
 .enjoy-feature-title{
     width: 470px;
@@ -144,7 +144,8 @@ main section{
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav-links,
-    .teams
+    .teams,
+    .enjoy-feature
     {
         flex-direction: column;
     }
@@ -156,16 +157,27 @@ main section{
     .our-features{
         margin: 0 auto;
     }
+    .enjoy-feature-img,
+    .enjoy-feature-title
+    {
+        max-width: 400px;
+        margin-left: 0;
+    }
 }
 
 
 /* responsive media query medium device*/
 @media screen and (min-width: 576px ) and (max-width: 992px) {
-    .teams{
+    .teams,
+    .enjoy-feature
+    {
         flex-direction: column;
     }
-    .our-features{
+    .enjoy-feature{
+        max-width: 600px;
         margin: 0 auto;
     }
-
+    .enjoy-feature-img{
+        margin-left: 0;
+    }
 }
